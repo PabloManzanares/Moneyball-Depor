@@ -3,6 +3,7 @@
 ![portada](https://as01.epimg.net/futbol/imagenes/2020/05/14/reportajes/1589479848_423331_1589716740_noticiareportajes_grande.jpg)
 
 
+
 # Objetivo.
 
 ⚽ El objetivo del trabajo es el análisis de jóvenes promesas y jugadores veteranos con un valor actual inferior a 1M€. Para ello, se obtendrá la siguiente información: nombre, edad, equipo actual, nacionalidad, valor de mercado, valoración actual del jugador, valoración de futuro, valoración del equipo actual y valoraciones futbolísticas del mismo (ataque, defensa, regate, aceleración...).
@@ -22,6 +23,7 @@
 
 
 
+
 # Obtención resultados.
 
 **Web scraping:** este método fue empleado para la obtención de las valoraciones y características de cada uno de los grupos de jugadores mencionados con anterioridad.
@@ -37,7 +39,7 @@ En este caso, el procedimiento seguido ha sido:
 
 1️⃣ Realización de una limpieza del dataframe original, previa exploración, para evitar outliers o nulos que puedan influir de manera negativa en los resultados del modelo. De esta forma, con la correcta gestión de estos datos es posible obtener un modelo más fiable.
 
-2️⃣ División de los jugadores en clusters, lo que permite analizar de manera independiente cada uno de ellos para obtener el precio correcto dependiendo de sus características. Así, obtenemos tres grandes grupos de jugadores divididos en tres clusters: atacantes, defensas y porteros. 
+2️⃣ División de los jugadores en clusters, lo que permite analizar de manera independiente cada uno de ellos para obtener el precio correcto dependiendo de sus características. Así, obtenemos tres grandes grupos de jugadores: atacantes, defensas y porteros. 
 
 3️⃣ Realización de un pipeline que permita determinar el mejor modelo predictivo para cada cluster de jugadores.
 
@@ -45,6 +47,8 @@ En este caso, el procedimiento seguido ha sido:
 
 
 **Streamlit** permite la presentación del producto final en un dashboard.
+
+
 
 
 # Estructura del proyecto.
@@ -72,6 +76,11 @@ En este caso, el procedimiento seguido ha sido:
 *veteranos:* csv con cada una de las características de los jugadores veteranos obtenidos.
 
 4️⃣ **Streamlit:** presentación en un dashboard del producto final obtenido mediante la realización del proyecto.
+
+❗ En este caso, es importante destacar la utilización de la librería pickle, la cual nos permite guardar los modelos fiteados para ofrecer al usuario la posibilidad de añadir características de un jugador y, en base a ellas, estimar un precio del jugador. En definitiva, permite al usuario interaccionar con el dashboard para obtener resultados a partir de sus propios datos.
+
+⚽ De este modo, se guardan los modelos ajustados para cada uno de los clusters, de modo que al añadir el usuario datos de un jugador, en primer lugar lo etiquetará en un cluster y, posteriormente, empleando el modelo específico para ese cluster, determinará su precio.
+
 
 
 # Librerías.
