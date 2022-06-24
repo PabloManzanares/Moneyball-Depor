@@ -8,7 +8,7 @@
 
 ⚽ El objetivo del trabajo es el análisis de jóvenes promesas y jugadores veteranos con un valor actual inferior a 1M€. Para ello, se obtendrá la siguiente información: nombre, edad, equipo actual, nacionalidad, valor de mercado, valoración actual del jugador, valoración de futuro, valoración del equipo actual y valoraciones futbolísticas del mismo (ataque, defensa, regate, aceleración...).
 
-❗ Además, es importante destacar que todas las **valoraciones se obtienen en rangos de 0 a 100** a partir de datos estadísticos de cada jugador. De este modo, dependiendo de los datos recogidos a partir de su rendimiento en los partidos, se le otorga una puntuación de 0 a 100 en cada uno de los campos analizados.
+❗ Además, es importante destacar que todas las **valoraciones se obtienen en rangos de 0 a 100** a partir de datos estadísticos de cada jugador. De este modo, dependiendo de los datos recogidos por su rendimiento en los partidos, se le otorga una puntuación de 0 a 100 en cada uno de los campos analizados.
 
 
 🥅 La realización del proyecto constará de los siguientes puntos:
@@ -17,7 +17,7 @@
 
 2️⃣ Repetición del web scraping para jugadores más mayores, veteranos en el fútbol profesional, con un valor actual inferior a 1M€.
 
-3️⃣ Una vez más, realización de un nuevo web scraping, esta vez con jugadores jóvenes de distintos precios y características. De esta forma, el objetivo del mismo es la obtención de un gran csv con el que poder realizar un modelo predictivo del precio de los jugadores dependiendo de sus características propias.
+3️⃣ Una vez más, realización de un nuevo web scraping. Esta vez con jugadores jóvenes de distintos precios y características. De este modo, el objetivo, en este caso, es la obtención de un gran csv con el que poder realizar un modelo predictivo del precio de los jugadores dependiendo de sus características propias.
 
 4️⃣ Realización de un modelo predictivo que permita obtener el precio de un jugador a partir de sus características y valoraciones.
 
@@ -26,12 +26,12 @@
 
 # Obtención resultados.
 
-**Web scraping:** este método fue empleado para la obtención de las valoraciones y características de cada uno de los grupos de jugadores mencionados con anterioridad.
+✔ **Web scraping:** este método fue empleado para la obtención de las valoraciones y características de cada uno de los grupos de jugadores mencionados con anterioridad.
 
 📈📊 Además, se estudiarán las características mediante gráficos de radar de manera individual y comparativa a modo de ejemplo, permitiendo un análisis más visual de los datos obtenidos. La elección de este tipo de gráfico es debido a que se trata de los más empleados en el mundo del fútbol.
 
 
-**Machine learning model** permite obtener un modelo predictivo con el que predecir el precio de un jugador dependiendo de sus características.
+✔ **Machine learning model** permite obtener un modelo predictivo con el que predecir el precio de un jugador dependiendo de sus características.
 
 🥅🏃‍♂️ A partir del dataframe obtenido con una gran cantidad de jugadores de distintos precio y características, se realiza un modelo predictivo que permita la posterior tasación de un jugador.
 
@@ -46,7 +46,7 @@ En este caso, el procedimiento seguido ha sido:
 4️⃣ Aplicación del modelo más apropiado a cada uno de los cluster de jugadores, lo que permite obtener una aproximación del precio, en euros, del jugador.
 
 
-**Streamlit** permite la presentación del producto final en un dashboard.
+✔ **Streamlit** permite la presentación del producto final en un dashboard.
 
 
 
